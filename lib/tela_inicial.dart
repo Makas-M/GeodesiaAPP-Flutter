@@ -24,122 +24,121 @@ class _TelaInicialState extends State<TelaInicial> {
         title: const Text('Geodesia na Mão'),
       ),
       backgroundColor: const Color(0xFFFCFAF8),
-      body: ListView(
-        children: <Widget>[
-          const SizedBox(height: 15.0),
-          Container(
-            padding: const EdgeInsets.all(30),
-            child: GridView.count(
-              crossAxisCount: 2,
-              children: <Widget>[
-                Card(
-                  margin: const EdgeInsets.all(8.0),
-                  child: InkWell(
-                    onTap: () async {
-                      await delay(200);
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => const Calculadora(),
-                        ),
-                      );
-                    },
-                    splashColor: Colors.grey,
-                    child: Center(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: const <Widget>[
-                          Icon(Icons.calculate, size: 70.0),
-                          Text(
-                            'Calculadora',
-                            style: TextStyle(fontSize: 17.5),
-                          )
-                        ],
-                      ),
+      body: Container(
+        padding: const EdgeInsets.all(30),
+        child: GridView.count(
+          crossAxisCount: 2,
+          children: <Widget>[
+            Card(
+              margin: const EdgeInsets.only(
+                  right: 15.0, left: 15.0, top: 5.0, bottom: 5.0),
+              child: InkWell(
+                onTap: () async {
+                  await delay(200);
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const Calculadora(),
                     ),
+                  );
+                },
+                splashColor: Colors.grey,
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: const <Widget>[
+                      Icon(Icons.calculate, size: 70.0),
+                      Text(
+                        'Calculadora',
+                        style: TextStyle(fontSize: 17.5),
+                      )
+                    ],
                   ),
                 ),
-                Card(
-                  margin: const EdgeInsets.all(8.0),
-                  child: InkWell(
-                    onTap: () async {
-                      await delay(200);
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => const Dicionario(),
-                        ),
-                      );
-                    },
-                    splashColor: Colors.blue,
-                    child: Center(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: const <Widget>[
-                          Icon(Icons.find_in_page, size: 70.0),
-                          Text(
-                            'Dicionário',
-                            style: TextStyle(fontSize: 17.5),
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-                Card(
-                  margin: const EdgeInsets.all(8.0),
-                  child: InkWell(
-                    onTap: () async {
-                      await delay(200);
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => const Quiz(),
-                        ),
-                      );
-                    },
-                    splashColor: Colors.red[100],
-                    child: Center(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: const <Widget>[
-                          Icon(Icons.quiz_rounded, size: 70.0),
-                          Text(
-                            'QUIZ',
-                            style: TextStyle(fontSize: 17.5),
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-                Card(
-                  margin: const EdgeInsets.all(8.0),
-                  child: InkWell(
-                    onTap: () async {
-                      await delay(200);
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => const Help(),
-                        ),
-                      );
-                    },
-                    splashColor: Colors.grey,
-                    child: Center(
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: const <Widget>[
-                          Icon(Icons.library_books, size: 70.0),
-                          Text(
-                            'Biblioteca',
-                            style: TextStyle(fontSize: 17.5),
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                )
-              ],
+              ),
             ),
-          ),
-        ],
+            Card(
+              margin: const EdgeInsets.only(
+                  right: 15.0, left: 15.0, top: 5.0, bottom: 5.0),
+              child: InkWell(
+                onTap: () async {
+                  await delay(200);
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const Dicionario(),
+                    ),
+                  );
+                },
+                splashColor: Colors.blue,
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: const <Widget>[
+                      Icon(Icons.find_in_page, size: 70.0),
+                      Text(
+                        'Dicionário',
+                        style: TextStyle(fontSize: 17.5),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              margin: const EdgeInsets.only(
+                  right: 15.0, left: 15.0, top: 5.0, bottom: 5.0),
+              child: InkWell(
+                onTap: () async {
+                  await delay(200);
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const Quiz(),
+                    ),
+                  );
+                },
+                splashColor: Colors.red[100],
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: const <Widget>[
+                      Icon(Icons.quiz_rounded, size: 70.0),
+                      Text(
+                        'QUIZ',
+                        style: TextStyle(fontSize: 17.5),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              margin: const EdgeInsets.only(
+                  right: 15.0, left: 15.0, top: 5.0, bottom: 5.0),
+              child: InkWell(
+                onTap: () async {
+                  await delay(200);
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const Help(),
+                    ),
+                  );
+                },
+                splashColor: Colors.grey,
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: const <Widget>[
+                      Icon(Icons.library_books, size: 70.0),
+                      Text(
+                        'Biblioteca',
+                        style: TextStyle(fontSize: 17.5),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
