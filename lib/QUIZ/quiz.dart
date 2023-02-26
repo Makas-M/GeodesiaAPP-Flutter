@@ -130,8 +130,6 @@ class _QuizState extends State<Quiz> {
           index = Random().nextInt(10);
           Set<int> resultados = HashSet<int>();
           resultados.add(index);
-          
-          int j = index;
 
           isPressed = false;
           isAlreadySelected = false;
