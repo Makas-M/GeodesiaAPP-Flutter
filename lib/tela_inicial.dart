@@ -37,7 +37,7 @@ class _TelaInicialState extends State<TelaInicial> {
                   await delay(200);
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => const Calculadora(),
+                      builder: (context) => Calculadora(),
                     ),
                   );
                 },

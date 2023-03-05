@@ -52,7 +52,7 @@ class Help extends StatelessWidget {
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: const Icon(Icons.arrow_back))
+                child: const Text('Ok'),),
           ],
         ),
       ),

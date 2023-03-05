@@ -66,7 +66,6 @@ class Calculadora extends State<CovertGMStoDEC> {
                 ],
               ),
 
-              //agregamos un Container
               Container(
                 padding: const EdgeInsets.only(top: 40),
                 child: Row(

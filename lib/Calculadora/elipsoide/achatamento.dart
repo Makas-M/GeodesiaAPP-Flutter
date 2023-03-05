@@ -36,7 +36,7 @@ class Calculadora extends State<Achatamento> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Raio do Paralelo'),
+        title: const Text('Achatamento'),
       ),
       body: Form(
         key: myFormKey,
@@ -82,6 +82,7 @@ class Calculadora extends State<Achatamento> {
               const SizedBox(height: 40),
               Row(
                 children: <Widget>[
+                  const SizedBox(width: 20),
                   const Text("Semi-eixo menor (b): "),
                   SizedBox(
                     width: 100,
@@ -119,7 +120,7 @@ class Calculadora extends State<Achatamento> {
               const Divider(
                 height: 40.0,
               ),
-             
+
               SizedBox(
                 height: 50.0,
                 width: 300,

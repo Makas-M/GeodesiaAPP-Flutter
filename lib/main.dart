@@ -6,14 +6,6 @@ import 'package:app/tela_inicial.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  var db = DBConnection();
-  db.addQuestion(
-    Question(
-      id: '20',
-      title: 'title',
-      options: {'1': false, '3': false, '4': false, '2': true},
-    ),
-  );
   runApp(const MyApp());
 }
 

@@ -40,8 +40,6 @@ class Calculadora extends State<RaioParalelo> {
     });
   }
 
-//ahora realizaremos el layout o diseño de nuestra calculadora
-//de indice de masa corporal
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,8 +60,6 @@ class Calculadora extends State<RaioParalelo> {
                   )
                 ],
               ),
-
-              //agregamos un Container
               Container(
                 padding: const EdgeInsets.only(top: 40),
                 child: Row(
@@ -72,7 +68,7 @@ class Calculadora extends State<RaioParalelo> {
                     const Text("Latitude do Paralelo: "),
                     SizedBox(
                       width: 40,
-                      height: 20,
+                      height: 30,
                       child: TextFormField(
                         controller: latg,
                         validator: (value) {
@@ -89,6 +85,7 @@ class Calculadora extends State<RaioParalelo> {
                     const Divider(),
                     SizedBox(
                       width: 40,
+                      height: 30,
                       child: TextFormField(
                         controller: latm,
                         validator: (value) {
@@ -106,6 +103,7 @@ class Calculadora extends State<RaioParalelo> {
                     const Text("'"),
                     SizedBox(
                       width: 40,
+                      height: 30,
                       child: TextFormField(
                         controller: lats,
                         validator: (value) {
@@ -124,7 +122,6 @@ class Calculadora extends State<RaioParalelo> {
                   ],
                 ),
               ),
-
               const SizedBox(height: 30),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -141,7 +138,6 @@ class Calculadora extends State<RaioParalelo> {
               const Divider(
                 height: 40.0,
               ),
-              //caja de resultado
               SizedBox(
                 height: 50.0,
                 width: 300,

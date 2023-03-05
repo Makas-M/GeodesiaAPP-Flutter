@@ -63,7 +63,9 @@ class Calculadora extends State<Excentr1> {
                       child: TextFormField(
                         controller: a,
                         validator: (value) {
-                          if (value!.isEmpty) {return "Preencha";}
+                          if (value!.isEmpty) {
+                            return "Preencha";
+                          }
                           return null;
                         },
                         decoration: const InputDecoration(
@@ -78,6 +80,7 @@ class Calculadora extends State<Excentr1> {
               const SizedBox(height: 40),
               Row(
                 children: <Widget>[
+                  const SizedBox(width: 20),
                   const Text("Semi-eixo menor (b): "),
                   SizedBox(
                     width: 150,
